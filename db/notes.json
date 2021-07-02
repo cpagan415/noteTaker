@@ -1,12 +1,9 @@
 {
   "notes": [
     {
-      "note": "this is the first note.",
+      "title": "banking",
+      "text": "please deposit",
       "id": "0"
-    },
-    {
-      "note": "this is the second note.",
-      "id": "1"
     }
   ]
 }
