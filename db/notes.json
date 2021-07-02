@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "note": "this is the first note.",
+      "id": "0"
+    },
+    {
+      "note": "this is the second note.",
+      "id": "1"
+    }
+  ]
+}
