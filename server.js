@@ -28,6 +28,25 @@ app.use(express.static('public'));
      return note;
  }
 
+ //note deletion
+
+ function deleteNote(params, noteArray)
+ {
+     //referenced GitHub Gist to splice-object-array : https://gist.github.com/scottopolis/6e35cf0d53bae81e6161662e6374da04
+    noteArray = notes;
+    let noteId = noteArray.map(function(noteObj)
+    {
+        return noteObj.id
+    }).indexOf(params);
+    noteArray.splice(noteId, 1);
+
+    fs.writeFileSync(
+        path.join(__dirname, './db/notes.json'),
+        JSON.stringify({notes: noteArray}, null ,2)
+    )
+    return;
+ }
+
  //validation for note creation here 
 //front end
 app.get('/', (req,res) => {
@@ -49,6 +68,13 @@ app.get('/api/notes', (req, res) => {
       const note = createNote(req.body, notes);
 
       res.json(note);
+  })
+
+  app.delete('/api/notes/:id', (req,res) => {
+    
+    const note = deleteNote(req.params.id, notes);
+    res.json({message: `${req.params.id} successfully deleted.`});
+
   })
 
   app.listen(PORT, ()=> {
