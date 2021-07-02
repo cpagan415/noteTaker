@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
+//adding to use of a unique id for notes here : https://www.npmjs.com/package/uniqid
+var uniqid = require("uniqid");
 const { notes }  = require('./db/notes.json');
 
 const PORT = process.env.PORT || 3001;
@@ -43,7 +45,7 @@ app.get('/api/notes', (req, res) => {
 
   app.post('/api/notes', (req,res) => {
       //for id creation
-      req.body.id = notes.length.toString();
+      req.body.id = uniqid();
       const note = createNote(req.body, notes);
 
       res.json(note);
