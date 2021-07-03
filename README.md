@@ -17,13 +17,14 @@ When the application link is opened, the user would be led to a homepage where t
 
 Whenever a note is created the json file displays a unique id which was done by the npm package uniqid. 
 
-<img width="200" height="200" alt="Screen Shot 2021-07-03 at 5 04 28 PM" src="https://user-images.githubusercontent.com/76018424/124366847-c1989a80-dc20-11eb-9fc3-0edf86c02161.png">
+<img width="500" height="400" alt="Screen Shot 2021-07-03 at 5 04 28 PM" src="https://user-images.githubusercontent.com/76018424/124366847-c1989a80-dc20-11eb-9fc3-0edf86c02161.png">
 
 
-<img width="200" height="200" alt="Screen Shot 2021-07-03 at 5 07 03 PM" src="https://user-images.githubusercontent.com/76018424/124366892-1b996000-dc21-11eb-9948-2d560aaed451.png">
+<img width="500" height="400" alt="Screen Shot 2021-07-03 at 5 07 03 PM" src="https://user-images.githubusercontent.com/76018424/124366892-1b996000-dc21-11eb-9948-2d560aaed451.png">
 
 Back-end with Express.js
-<img width="200" height="200" alt="Screen Shot 2021-07-03 at 5 07 43 PM" src="https://user-images.githubusercontent.com/76018424/124366907-34097a80-dc21-11eb-9c51-5cfe3e0d449b.png">
+
+<img width="500" height="400" alt="Screen Shot 2021-07-03 at 5 07 43 PM" src="https://user-images.githubusercontent.com/76018424/124366907-34097a80-dc21-11eb-9c51-5cfe3e0d449b.png">
 
 ## References
 
